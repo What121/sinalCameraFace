@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="blue_d">#043556</color>
+    <color name="white">#FFFFFF</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="black">#000000</color>
+    <color name="lightBlue">#80FFFF</color>
+    <color name="blue">#1E90FF</color>
+    <color name="blue_q">#AEEEEE</color>
+    <color name="dullRed">#CA0000</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent_gray">#CC000000</color>
+    <color name="transparent_gray_book">#aa303030</color>
+    <color name="transparent_white">#55ffffff</color>
+    <color name="transparent_white_d">#99ffffff</color>
+    <color name="lightGreen">#7DFF8D</color>
+    <color name="welcome0">#324760</color>
+    <color name="welcome1">#FFFF00</color>
+    <color name="welcome2">#7DFF8D</color>
+    <color name="gray">#5B5B5B</color>
+    <color name="orange">#FF8247</color>
+    <color name="orange_y">#FFA500</color>
+    <color name="green">#7FFF00</color>
+    <color name="green_d">#7AC5CD</color>
+    <color name="purple">#CD00CD</color>
+    <color name="red">#FF3030</color>
+    <color name="red_d">#b20a0a</color>
+    <color name="blackGray">#484891</color>
+    <color name="gray_low">#aaaaaa</color>
+
+    <drawable name="yellow">#FFFF00</drawable>
+
+</resources>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:orientation="vertical"
+    tools:context="com.openailab.sdkdemo.MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/linelayout2"
+        android:layout_weight="10"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/black">
+        <com.openailab.sdkdemo.myDrawRectView
+            android:id="@+id/mipi_preview_content"
+            android:layout_width="match_parent"
+            android:layout_height="650dp"
+            android:layout_gravity="center"/>
+        <SurfaceView
+            android:layout_width="match_parent"
+            android:layout_height="650dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:id="@+id/java_camera_view"
+            android:clickable="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/flipBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="设置"
+                android:textColor="@color/blue_d"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:gravity="center"
+                android:text="点击图像人脸注册"
+                android:textColor="@color/blue"
+                android:textSize="40sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/settingLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:clickable="false"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:id="@+id/radioGroupFlip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="调整画框:"
+                        android:textSize="30sp" />
+
+                    <RadioButton
+                        android:id="@+id/flipSettingsEnable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="启用"
+                        android:textSize="30sp" />
+
+                    <RadioButton
+                        android:id="@+id/flipSettingsDisable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="禁用"
+                        android:textSize="30sp" />
+                </RadioGroup>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/settingSaveBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="30sp"
+                        android:text="确定" />
+
+                    <!--<Button-->
+                        <!--android:id="@+id/settingCancel"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginLeft="80dp"-->
+                        <!--android:textSize="30sp"-->
+                        <!--android:text="取消" />-->
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">single_SDKDemo</string>
+    <string name="pref_start_id">startID</string>
+</resources>
